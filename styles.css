@@ -2066,7 +2066,7 @@ body{
         font-size: 36px;
         font-weight: 700;
         transition: all 1s;
-        top: 0;
+        top: 20px;
         color: #ffffff;
         text-align: center;
         position: absolute;
@@ -2429,6 +2429,7 @@ body{
   background-color: #fafbfa;
   transform: rotateY(180deg);
   margin-left: -32px;
+  width: 30vh;
 }
 
 /* Specifically targeting the <video> element */
@@ -2448,9 +2449,9 @@ body{
   height: 13.5rem;
   padding: 1rem;
   position: absolute;
-  right: 0;
+  right: 5%;
   transition: all 1s ease;
-  width: 13.5rem;
+  width: 25vh;
   z-index: 1;
 }
 
@@ -2503,5 +2504,88 @@ body{
   .inside-page5{
     width: 46vw;
     right: 8%;
+  }
+}
+
+
+.container6 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.cta6 {
+  background: #333;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+  width: 260px;
+  
+  &:hover {
+     
+     img {
+        top: -1%;
+        filter: brightness(30%);
+     }
+     
+     .text6 {
+        bottom: 0;
+     }
+  }
+  
+  img {
+     bottom: 0px;
+     filter: brightness(100%);
+     left: 0;
+     position: absolute;
+     right: 0;
+     top: 0px;
+     transition: 0.5s ease-in-out;
+     width: 115%;
+  }
+
+
+  .text6 {
+     bottom: -52.5%;
+     padding: 15px;
+     position: absolute;
+     font-size: 14px;
+     transition: 0.5s ease-in-out;
+
+     .cta6-heading {
+        color: #ffffff;
+        display: inline-block;
+        font-weight: 300;
+        margin-bottom: 5px;
+        position: relative;
+        z-index: 10;
+     }
+     
+     .cta6-text {
+        color: #ffffff;
+        font-weight: 300;
+     }
+  }
+}
+
+.cta6::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.cta6:hover::after {
+  opacity: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .container6 {
+    margin-right: -8vh;
   }
 }

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+    </div>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Sayan</a>
+                </div>
+
+                <div id="visitor-counter" class="visitor-counter" style="display: flex; align-items: center; gap: 5px;">
+                    <img src="assets/img/eye.png" alt="Visitor Icon" style="width: 25px; height: 22px; position: relative; top: -3px;">
+                    <span id="visitor-count">Loading...</span>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#faq" class="nav__link">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+       
+       
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sayan</span><br> A <span class="home__role">Developer</span></h1>
+
+                   <!-- Modified CV Button with Bubble Effect -->
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+              <feComposite in="SourceGraphic" in2="goo"/>
+            </filter>
+          </defs>
+        </svg>
+    </div>
+    
+    <span class="button--bubble__container" id="bubble-container">
+        <button id="download-btn" class="button button--bubble">
+            <span class="button-text">C V</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="currentColor" class="ai-icon">
+                <path d="M624 706.3h-74.1V464c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v242.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.7a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9z" />
+                <path d="M811.4 366.7C765.6 245.9 648.9 160 512.2 160S258.8 245.8 213 366.6C127.3 389.1 64 467.2 64 560c0 110.5 89.5 200 199.9 200H304c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8h-40.1c-33.7 0-65.4-13.4-89-37.7-23.5-24.2-36-56.8-34.9-90.6.9-26.4 9.9-51.2 26.2-72.1 16.7-21.3 40.1-36.8 66.1-43.7l37.9-9.9 13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0 1 52.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9 15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5 37.8 10C846.1 454.5 884 503.8 884 560c0 33.1-12.9 64.3-36.3 87.7a123.07 123.07 0 0 1-87.6 36.3H720c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h40.1C870.5 760 960 670.5 960 560c0-92.7-63.1-170.7-148.6-193.3z" />
+            </svg>
+        </button>
+        <span class="button--bubble__effect-container">
+            <span class="circle top-left"></span>
+            <span class="circle top-left"></span>
+            <span class="circle top-left"></span>
+            <span class="button effect-button"></span>
+            <span class="circle bottom-right"></span>
+            <span class="circle bottom-right"></span>
+            <span class="circle bottom-right"></span>
+        </span>
+    </span>
+                  
+  
+                      
+                      
+  
+
+    <!-- Placeholder for the Tick Animation -->
+    <div id="tick-animation" style="display: none; width: 100px; height: 100px;"></div>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.facebook.com" class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com" class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.whatsapp.com" class="icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com" class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>                
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/1st.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/2nd.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Sayan</h2>
+                        <p class="about__text">I'm a full-stack developer with a strong background in web and app development, design, and editing. I specialize in building seamless, user-friendly interfaces and robust backend systems, combining technical expertise with creative design. My passion lies in crafting innovative, tailored solutions that deliver exceptional results and exceed expectations.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Skilled in HTML, CSS, JavaScript, Node.js, Next.js, React, React Native, UI/UX design, and photo-video editing. I create seamless, user-focused digital solutions.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-nodejs skills__icon'></i>
+                                <span class="skills__name">Node.js</span>
+                            </div>
+                            <div class="skills__bar skills__nodejs"></div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="assets/img/next.png" alt="Next.js" class="skills__icon" style="height: 24px;">
+                                <span class="skills__name">Next.js</span>
+                            </div>
+                            <div class="skills__bar skills__nextjs">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-react skills__icon'></i>
+                                <span class="skills__name">React</span>
+                            </div>
+                            <div class="skills__bar skills__react">
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-react skills__icon'></i>
+                                <span class="skills__name">React Native</span>
+                            </div>
+                            <div class="skills__bar skills__react-native">
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>  
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>   
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="assets/img/Editing1.png" alt="Editing" class="skills__icon" style="height: 24px;">
+                                <span class="skills__name">Editing</span>
+                            </div>
+                            <div class="skills__bar skills__nextjs">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>                                       
+                    </div>   
+                    <div>              
+                        <img src="assets/img/3rd.png" alt="" class="skills__img">
+                    </div>                   
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Services</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <div class="ray-effect"></div>
+                                <img src="assets/img/my1.gif" alt="GIF">
+                                <p class="flip-card-text">FULL STACK<br>DEVELOPMENT</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>❝ I offer full-stack development with robust backend support and seamless frontend experiences. For web, I handle both frontend and backend, and for apps, I provide full backend support and basic React Native frontend development. ❞</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card2">
+                        <div class="wrapper2">
+                          <img src="assets/img/ai.jpeg" class="cover-image2" />
+                        </div>
+                        <img src="assets/img/ai13.png" class="title2" />       
+                        <img src="assets/img/ai3.png" class="character2" />
+                      </div>
+
+                      <li class="card3 cards__item3">
+                        <div class="card__frame3">
+                          <div class="card__picture3">
+                            <img src="assets/img/Node-js2.gif" alt="" width="120">
+                          </div>
+                          <h2 class="card__title3">Node.js</h2>
+                        </div>
+                        <div class="card__overlay3"></div>
+                        <div class="card__content3">
+                          <h2>Node.js</h2>
+                          <p>I provide scalable and efficient backend solutions using Node.js, ensuring secure APIs, real-time data handling, and seamless database integration for web and mobile applications.</p>
+                        </div>
+                      </li>
+
+                      <div class="panel4">
+                        <div class="ring4">
+                          <div class="card4 card14"></div>
+                          <div class="border4">
+                            <p class="title4">Next.js</p>
+                            <div class="slide4">
+                              <h6 class="para4">I provide full-stack Next.js development, creating fast, scalable, and SEO-friendly websites. From dynamic web apps to custom APIs, I build seamless user experiences with modern technologies and best practices.</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        
+                            <div class="card-section5">
+                                          <div class="card5">
+                                              <div class="flip-card5">
+                                                  <div class="flip-card__container5">
+                                                      <div class="card-front5">
+                                                          <div class="card-front__tp5 card-front__tp--city5">
+                                                              <img src="assets/img/react.gif" alt="React Icon" class="card-front__icon5">
+                          
+                                                         <h2 class="card-front__heading5">
+                                                          React Native
+                                                      </h2>
+                                                          </div>
+                          
+                                                          <div class="card-front__bt5">
+                                                              <p class="card-front__text-view5 card-front__text-view--city5">
+                                                                  Open
+                                                              </p>
+                                                          </div>
+                                                      </div>
+                                                      <div class="card-back5">
+                                                          <img class="video__container5" src="assets/img/react1.gif" alt="React Image">
+                                                      </div>
+                                                      
+                                                  </div>
+                                              </div>
+                          
+                                              <div class="inside-page5">
+                                                  <div class="inside-page__container5">
+                                                      <h3 class="inside-page__heading5 inside-page__heading--city5">
+                                                         REACT
+                                                      </h3>
+                                                      <p class="inside-page__text5">
+                                                          I provide full-stack web development using React, along with Android app development using React Native. I build scalable, user-friendly, and high-performance applications tailored to your needs.
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                            </div>
+                                    
+                      </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact__container bd-grid">
+                    <form id="contactForm" class="contact__form">
+                        <div class="input-wrapper">
+                            <input type="text" id="name" placeholder="Name" class="contact__input">
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="email" id="email" placeholder="Email" class="contact__input">
+                        </div>
+                        <div class="input-wrapper">
+                            <textarea id="message" cols="0" rows="8" placeholder="Message" class="contact__input"></textarea>
+                        </div>                        
+                            <div class="wrapper-no4">
+                                <button class="button-bird">
+                                    <p class="button-bird__text">SEND</p>
+                                    <svg version="1.1" class="feather" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 75 38" style="enable-background:new 0 0 75 38;" xml:space="preserve">
+                                        <g>
+                                            <path d="M20.8,31.6c3.1-0.7,2.9-2.3,2,1c9.1,4.4,20.4,3.7,29.1-0.8l0,0c0.7-2.1,1-3.9,1-3.9c0.6,0.8,0.8,1.7,1,2.9
+                                                c4.1-2.3,7.6-5.3,10.2-8.3c0.4-2.2,0.4-4,0.4-4.1c0.6,0.4,0.9,1.2,1.2,2.1c4.5-6.1,5.4-11.2,3.7-13.5c1.1-2.6,1.6-5.4,1.2-7.7
+                                                c-0.5,2.4-1.2,4.7-2.1,7.1c-5.8,11.5-16.9,21.9-30.3,25.3c13-4,23.6-14.4,29.1-25.6C62.8,9,55.6,16.5,44.7,20.7
+                                                c2.1,0.7,3.5,1.1,3.5,1.6c-0.1,0.4-1.3,0.6-3.2,0.4c-7-0.9-7.1,1.2-16,1.5c1,1.3,2,2.5,3.1,3.6c-1.9-0.9-3.8-2.2-5.6-3.6
+                                                c-0.9,0.1-10.3,4.9-22.6-12.3C5.9,17.7,11.8,26.9,20.8,31.6z"/>
+                                        </g>
+                                    </svg>
+                                    
+                                    
+
+                                    <span class="bird--5"></span>
+                                    <span class="bird--6"></span>
+                                   
+                                    <span class="bird--8"></span>
+                                    
+                                    
+                                    <span class="bird--11"></span>
+                                   
+                                   
+                                   
+                                   
+                                    
+                                   
+                                   
+                                   
+                                    
+                                    
+                                   
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <span class="bird--30"></span>
+                                </button>
+                            </div>
+                        </div>
+                        </div>
+                    </form>                                 
+                </div>
+              </section>
+
+              <!--===== FAQs SECTION (Blank) =====-->
+              <section class="faq section" id="faq">
+                <h2 class="section-title">FAQs</h2>
+                <div class="faq__container bd-grid">
+                    <div class="faq__input-container">
+                        <input type="text" id="faq-question" placeholder="Type your question..." class="faq__input">
+                        <button id="faq-ask-button" class="faq__btn">Ask</button>
+                    </div>
+                    <div class="faq__answer-container">
+                        <h3 id="faq-question-display" class="faq__question"></h3>
+                        <div id="faq-answer-box" class="faq__answer"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <h2 class="footer__title" style="font-size: 1.5rem;">Sayan</h2> 
+            <p class="footer__text">
+                <span class="blinking-light left"></span>
+                Currently available for freelance
+                <span class="blinking-light right"></span>
+            </p>
+            <span class="footer__copy" style="margin-top: 1rem; display: block;">&#169; 2025 Sayan. All rights reserved.</span>
+        </footer>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script>
+  $('.button--bubble').each(function() {
+        var $circlesTopLeft = $(this).parent().find('.circle.top-left');
+        var $circlesBottomRight = $(this).parent().find('.circle.bottom-right');
+
+        var tl = gsap.timeline();
+        var tl2 = gsap.timeline();
+        var btTl = gsap.timeline({ paused: true });
+
+        tl.to($circlesTopLeft, { duration: 1.2, x: -25, y: -25, scaleY: 2, ease: "power4.out" }); // Replaced SlowMo.ease
+        tl.to($circlesTopLeft.eq(0), { duration: 0.1, scale: 0.2, x: '+=6', y: '-=2' });
+        tl.to($circlesTopLeft.eq(1), { duration: 0.1, scaleX: 1, scaleY: 0.8, x: '-=10', y: '-=7' }, '-=0.1');
+        tl.to($circlesTopLeft.eq(2), { duration: 0.1, scale: 0.2, x: '-=15', y: '+=6' }, '-=0.1');
+        tl.to($circlesTopLeft.eq(0), { duration: 1, scale: 0, x: '-=5', y: '-=15', opacity: 0 });
+        tl.to($circlesTopLeft.eq(1), { duration: 1, scaleX: 0.4, scaleY: 0.4, x: '-=10', y: '-=10', opacity: 0 }, '-=1');
+        tl.to($circlesTopLeft.eq(2), { duration: 1, scale: 0, x: '-=15', y: '+=5', opacity: 0 }, '-=1');
+
+        var tlBt1 = gsap.timeline();
+        var tlBt2 = gsap.timeline();
+        
+        tlBt1.set($circlesTopLeft, { x: 0, y: 0, rotation: -45 });
+        tlBt1.add(tl);
+
+        tl2.set($circlesBottomRight, { x: 0, y: 0 });
+        tl2.to($circlesBottomRight, { duration: 1.1, x: 30, y: 30, ease: "power4.out" }); // Replaced SlowMo.ease
+        tl2.to($circlesBottomRight.eq(0), { duration: 0.1, scale: 0.2, x: '-=6', y: '+=3' });
+        tl2.to($circlesBottomRight.eq(1), { duration: 0.1, scale: 0.8, x: '+=7', y: '+=3' }, '-=0.1');
+        tl2.to($circlesBottomRight.eq(2), { duration: 0.1, scale: 0.2, x: '+=15', y: '-=6' }, '-=0.2');
+        tl2.to($circlesBottomRight.eq(0), { duration: 1, scale: 0, x: '+=5', y: '+=15', opacity: 0 });
+        tl2.to($circlesBottomRight.eq(1), { duration: 1, scale: 0.4, x: '+=7', y: '+=7', opacity: 0 }, '-=1');
+        tl2.to($circlesBottomRight.eq(2), { duration: 1, scale: 0, x: '+=15', y: '-=5', opacity: 0 }, '-=1');
+        
+        tlBt2.set($circlesBottomRight, { x: 0, y: 0, rotation: 45 });
+        tlBt2.add(tl2);
+
+        btTl.add(tlBt1);
+        btTl.to($(this).parent().find('.button.effect-button'), { duration: 0.8, scaleY: 1.1 }, 0.1);
+        btTl.add(tlBt2, 0.2);
+        btTl.to($(this).parent().find('.button.effect-button'), { duration: 1.8, scale: 1, ease: "elastic.out(1.2, 0.4)" }, 1.2);
+
+        btTl.timeScale(2.6);
+
+        $(this).on('mouseenter mouseleave', function() {
+            btTl.restart();
+        });
+    });
+</script>
+<script>
+    document.getElementById("download-btn").addEventListener("click", function() {
+     let buttonContainer = document.getElementById("bubble-container");
+     
+     // Add transition effect
+     buttonContainer.style.transition = "opacity 1s ease-out";
+     
+     // Set opacity to 0 with delay
+     setTimeout(() => {
+         buttonContainer.style.opacity = "0";
+         buttonContainer.style.pointerEvents = "none"; // Prevent interactions
+     }, 100);
+ });
+ </script> 
+    </body>
+</html>

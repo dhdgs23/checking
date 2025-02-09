@@ -2505,6 +2505,11 @@ body{
     width: 46vw;
     right: 8%;
   }
+
+  .faq-subtext {
+    top: -20px;
+    left: 36%;
+  }
 }
 
 
@@ -2588,6 +2593,11 @@ body{
   .container6 {
     margin-right: -8vh;
   }
+
+  .faq-subtext {
+    top: -38px;
+    left: 46.5%;
+  }
 }
 
 
@@ -2648,6 +2658,11 @@ body{
   .container6 {
     margin-right: 6%;
   }
+
+  .faq-subtext {
+    top: -20px;
+    left: 45%;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 750px) {
@@ -2684,6 +2699,11 @@ body{
 
 .panel4{
   margin-right: 10%;
+}
+
+.faq-subtext {
+  top: -20px;
+  left: 43%;
 }
 }
 
@@ -2742,5 +2762,44 @@ body{
   .skills__img {
     width: 80%;
         margin-left: 10%;
+  }
+
+  .faq-subtext {
+    top: -20px;
+    left: 43%;
+  }
+}
+
+.faq-subtext {
+  display: inline-block;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: brown;
+  position: relative; /* Allows precise adjustment */
+  overflow: hidden;
+}
+
+/* Adding the white ray shine effect */
+.faq-text::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 150%;
+  height: 200%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.6) 20%, transparent 60%);
+  transform: skewX(-70deg);
+  animation: rayEffect 3s infinite ease-in-out;
+}
+
+@keyframes rayEffect {
+  0% {
+      left: -100%;
+      top: -50%;
+  }
+  100% {
+      left: 100%;
+      top: 100%;
   }
 }

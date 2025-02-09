@@ -2771,35 +2771,82 @@ body{
 }
 
 .faq-subtext {
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between stars and text */
+  position: relative;
   font-size: 1rem;
   font-weight: bold;
   color: brown;
-  position: relative; /* Allows precise adjustment */
   overflow: hidden;
+  left: 0;
 }
 
-/* Adding the white ray shine effect */
+/* Stars container alignment */
+.faq-stars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Left-side stars stay aligned */
+.left-stars {
+  flex-direction: row-reverse; /* Ensures a natural star layout */
+}
+
+/* Right-side stars stay aligned */
+.right-stars {
+  flex-direction: row;
+}
+
+/* Common star styles */
+.star {
+  display: block;
+  background: rgba(255, 0, 0, 0.8);
+  clip-path: polygon(
+      50% 0%, 61% 35%, 98% 35%, 68% 57%,
+      79% 91%, 50% 70%, 21% 91%, 32% 57%,
+      2% 35%, 39% 35%
+  );
+  animation: shineEffect 3s infinite linear;
+}
+
+/* Different sizes */
+.star-big { width: 18px; height: 18px; }
+.star-medium { width: 14px; height: 14px; }
+.star-small { width: 10px; height: 10px; }
+
+/* Star glow animation */
+@keyframes shineEffect {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Ensure the ray stays only on the text */
+.faq-text {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* White ray animation moving only over the text */
 .faq-text::after {
   content: "";
   position: absolute;
-  top: -50%;
-  left: -100%;
-  width: 150%;
-  height: 200%;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
   background: linear-gradient(120deg, rgba(255, 255, 255, 0.6) 20%, transparent 60%);
-  transform: skewX(-70deg);
+  transform: skewX(-80deg);
   animation: rayEffect 3s infinite ease-in-out;
 }
 
+/* Animation restricted within the text area */
 @keyframes rayEffect {
-  0% {
-      left: -100%;
-      top: -50%;
-  }
-  100% {
-      left: 100%;
-      top: 100%;
-  }
+  0% { left: -120%; }
+  100% { left: 120%; }
 }

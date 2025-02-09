@@ -2508,7 +2508,7 @@ body{
 
   .faq-subtext {
     top: -20px;
-    left: 36%;
+    left: 20%;
   }
 }
 
@@ -2596,7 +2596,7 @@ body{
 
   .faq-subtext {
     top: -38px;
-    left: 46.5%;
+    left: 42%;
   }
 }
 
@@ -2661,7 +2661,12 @@ body{
 
   .faq-subtext {
     top: -20px;
-    left: 45%;
+    left: 38%;
+  }
+
+  .l-header {
+    width: 90%;
+    left: 40px;
   }
 }
 
@@ -2703,7 +2708,7 @@ body{
 
 .faq-subtext {
   top: -20px;
-  left: 43%;
+  left: 34%;
 }
 }
 
@@ -2766,21 +2771,20 @@ body{
 
   .faq-subtext {
     top: -20px;
-    left: 43%;
+    left: 35%;
   }
 }
 
 .faq-subtext {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px; /* Space between stars and text */
   position: relative;
   font-size: 1rem;
   font-weight: bold;
-  color: brown;
+  color: rgb(172, 0, 191);
   overflow: hidden;
-  left: 0;
 }
 
 /* Stars container alignment */
@@ -2803,7 +2807,7 @@ body{
 /* Common star styles */
 .star {
   display: block;
-  background: rgba(255, 0, 0, 0.8);
+  background: rgb(255, 0, 0);
   clip-path: polygon(
       50% 0%, 61% 35%, 98% 35%, 68% 57%,
       79% 91%, 50% 70%, 21% 91%, 32% 57%,
@@ -2823,29 +2827,20 @@ body{
   50% { opacity: 1; transform: scale(1.2); }
 }
 
-/* Ensure the ray stays only on the text */
-.faq-text {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  text-align: center;
-  white-space: nowrap;
-}
-
-/* White ray animation moving only over the text */
-.faq-text::after {
+/* Ensure the ray covers BOTH text and stars */
+.faq-subtext::after {
   content: "";
   position: absolute;
   top: 0;
   left: -120%;
-  width: 60%;
+  width: 30%;
   height: 100%;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.6) 20%, transparent 60%);
-  transform: skewX(-80deg);
-  animation: rayEffect 3s infinite ease-in-out;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.6) 20%, transparent 30%);
+  transform: skewX(-75deg);
+  animation: rayEffect 7s infinite ease-in-out;
 }
 
-/* Animation restricted within the text area */
+/* Animation restricted within text + stars */
 @keyframes rayEffect {
   0% { left: -120%; }
   100% { left: 120%; }

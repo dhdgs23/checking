@@ -509,7 +509,7 @@ img {
   }
   
   /* Apply margin-top for larger screens */
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 900px) {
     .skills__img[src="assets/img/3rd.png"] {
       margin-top: 100px; /* Add margin-top for larger screens */
     }
@@ -2598,4 +2598,149 @@ body{
 
 .wrapper2 {
   height: 250px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  .home__data{
+    margin-left: 5%;
+  }
+
+  .home__social {
+    margin-left: 4%;
+  }
+
+  .about__container {
+    margin-right: 10%;
+  }
+
+  .skills__img {
+    width: 100%;
+    right: 5%;
+  }
+
+  .skills__container {
+    margin-left: 5%;
+  }
+  .card3 {
+    left: 5%;
+  }
+
+  .card2 {
+    left: 1%;
+  }
+
+  .inside-page5 {
+    right: 0%;
+    width: 13.5rem;
+  }
+
+  .card-back5 {
+    width: 15.7rem;
+  }
+  .card5:hover {
+    margin-left: -15%;
+  }
+
+  .card-section5 {
+    left: 4%;
+  }
+
+  .container6 {
+    margin-right: 6%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 750px) {
+  .home__blob {
+    position: absolute;
+    top: -25vh;
+}
+.skills__img {
+  width: 30vh;
+  margin-left: 27%;
+}
+
+.card3{
+  margin-top: 25%;
+}
+
+.inside-page5 {
+  width: 13.5rem;
+  right: -1%;
+}
+
+.card5:hover {
+  margin-left: 30%;
+}
+
+.video__container5 {
+  margin-left: 15%;
+  margin-top: -15%;
+}
+
+.card-section5{
+  margin-left: 10%;
+}
+
+.panel4{
+  margin-right: 10%;
+}
+}
+
+@media screen and (min-width: 750px) and (max-width: 800px) {
+  .card2 {
+    left: 25%;
+  }
+
+  .card3 {
+    top: 130%;
+   left: -240%;
+  }
+
+  .panel4 {
+    left: 170%;
+    top: -17%;
+  }
+
+  .card-section5 {
+    top: 35%;
+        left: -80%;
+        margin-bottom: 180%;
+  }
+
+  .inside-page5 {
+    right: -1%;
+        width: 13.5rem;
+  }
+
+  .card5:hover {
+    margin-left: 40%;
+  }
+
+  .card-back5 {
+    width: 15rem;
+  }
+
+  .container6 {
+    margin-top: 180%;
+        margin-left: -190%;
+  }
+
+  .cta6 {
+    position: absolute;
+  }
+
+  .home__blob {
+    top: -220%;
+    position: absolute;
+  }
+
+  .about__container {
+    margin-right: 5%;
+  }
+
+  .skills__img {
+    width: 80%;
+        margin-left: 10%;
+  }
 }

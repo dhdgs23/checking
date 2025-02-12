@@ -71,7 +71,7 @@ const sr = ScrollReveal({
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.icon',{ interval: 200}); 
-sr.reveal('.skills__data, .work__img, .contact__input, .wrapper-no4',{interval: 200}); 
+sr.reveal('.skills__data, .work__img, .contact__input, .wrapper-no4, .flip-card, .card2, .card3, .panel4, .card-section5, .container6',{interval: 200}); 
 sr.reveal('.faq__container, .faq__answer-container', { delay: 300 });
 
 /*===== COUNTING ANIMATION IN SKILLS =====*/

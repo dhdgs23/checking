@@ -2718,6 +2718,7 @@ body{
   .card3 {
     top: 130%;
    left: -240%;
+   z-index: 10;
   }
 
   .panel4 {

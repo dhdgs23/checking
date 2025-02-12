@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Home Page -->
+    <url>
+        <loc>https://dhdgs23.github.io/checking</loc>
+        <lastmod>2025-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- About Section -->
+    <url>
+        <loc>https://dhdgs23.github.io/checking/#about</loc>
+        <lastmod>2025-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Skills Section -->
+    <url>
+        <loc>https://dhdgs23.github.io/checking/#skills</loc>
+        <lastmod>2025-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Services Section -->
+    <url>
+        <loc>https://dhdgs23.github.io/checking/#work</loc>
+        <lastmod>2025-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Contact Section -->
+    <url>
+        <loc>https://dhdgs23.github.io/checking/#contact</loc>
+        <lastmod>2025-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- FAQ Section -->
+    <url>
+        <loc>https://dhdgs23.github.io/checking/#faq</loc>
+        <lastmod>2025-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>

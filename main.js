@@ -428,7 +428,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           // Add checkmark image
           const checkmark = document.createElement("img");
-          checkmark.src = "assets/img/checkmark.png"; // Update with the correct path to your checkmark image
+          checkmark.src = "assets/img/checkmark.webp"; // Update with the correct path to your checkmark image
           checkmark.alt = "Checkmark";
           checkmark.style.width = "30px";
           checkmark.style.height = "30px";

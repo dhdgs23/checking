@@ -1,5 +1,3 @@
 User-agent: *
-Disallow: /assets/
-Disallow: /node_modules/
-Allow: /
+Disallow: 
 Sitemap: https://dhdgs23.github.io/checking/sitemap.xml
